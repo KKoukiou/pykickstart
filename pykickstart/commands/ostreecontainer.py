@@ -96,3 +96,13 @@ class F38_OSTreeContainer(KickstartCommand):
 
 class RHEL9_OSTreeContainer(F38_OSTreeContainer):
     pass
+
+class RHEL10_OSTreeContainer(F38_OSTreeContainer):
+    removedKeywords = KickstartCommand.removedKeywords
+    removedAttrs = KickstartCommand.removedAttrs
+    conflictingCommands = ["ostreesetup", "bootc"]
+
+class F43_OSTreeContainer(F38_OSTreeContainer):
+    removedKeywords = KickstartCommand.removedKeywords
+    removedAttrs = KickstartCommand.removedAttrs
+    conflictingCommands = ["ostreesetup", "bootc"]
