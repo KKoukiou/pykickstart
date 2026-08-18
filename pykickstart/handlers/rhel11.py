@@ -28,7 +28,7 @@ class RHEL11Handler(BaseHandler):
         "auth": commands.authconfig.F35_Authconfig, # RemovedCommand
         "authconfig": commands.authconfig.F35_Authconfig, # RemovedCommand
         "authselect": commands.authselect.F28_Authselect,
-        "autopart": commands.autopart.F41_AutoPart,
+        "autopart": commands.autopart.F45_AutoPart,
         "autostep": commands.autostep.F40_Autostep, # RemovedCommand
         "bootc": commands.bootc.F45_Bootc,
         "bootloader": commands.bootloader.F39_Bootloader,
@@ -61,7 +61,7 @@ class RHEL11Handler(BaseHandler):
         "logvol": commands.logvol.RHEL10_LogVol,
         "mediacheck": commands.mediacheck.FC4_MediaCheck,
         "method": commands.method.F40_Method, # RemovedCommand
-        "mount": commands.mount.F27_Mount,
+        "mount": commands.mount.F45_Mount,
         "multipath": commands.multipath.F34_MultiPath,
         "network": commands.network.RHEL10_Network,
         "nfs": commands.nfs.FC6_NFS,
@@ -88,6 +88,8 @@ class RHEL11Handler(BaseHandler):
         "snapshot": commands.snapshot.F26_Snapshot,
         "sshpw": commands.sshpw.F24_SshPw,
         "sshkey": commands.sshkey.F22_SshKey,
+        "stratisfs": commands.stratisfs.F45_StratisFs,
+        "stratispool": commands.stratispool.F45_StratisPool,
         "syspurpose" : commands.syspurpose.RHEL10_Syspurpose,
         "text": commands.displaymode.F26_DisplayMode,
         "timezone": commands.timezone.RHEL10_Timezone,
@@ -123,6 +125,8 @@ class RHEL11Handler(BaseHandler):
         "SnapshotData": commands.snapshot.F26_SnapshotData,
         "SshPwData": commands.sshpw.F24_SshPwData,
         "SshKeyData": commands.sshkey.F38_SshKeyData,
+        "StratisFsData": commands.stratisfs.F45_StratisFsData,
+        "StratisPoolData": commands.stratispool.F45_StratisPoolData,
         "UserData": commands.user.F19_UserData,
         "VolGroupData": commands.volgroup.RHEL10_VolGroupData,
         "ZFCPData": commands.zfcp.F37_ZFCPData,
